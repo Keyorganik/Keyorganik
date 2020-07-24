@@ -1,4 +1,8 @@
 .header {
+	&__nav {
+		position: relative;
+		z-index: 2;
+	}
 	&__list {
 		color: $color-white;
 		display: flex;

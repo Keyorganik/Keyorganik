@@ -1,0 +1,13 @@
+.card {
+	&__header {
+		& > i {
+			color: $color-secondary;
+		}
+	}
+	&__body {
+		&--paragraph {
+			font-size: 1.5rem;
+			line-height: 1.8;
+		}
+	}
+}

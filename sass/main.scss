@@ -12,11 +12,14 @@
 //components
 @import 'components/button';
 @import 'components/scroll';
+@import 'components/card';
 
 //layouts
 @import 'layout/navigation';
 @import 'layout/hero';
 @import 'layout/header';
+@import 'layout/grid';
+@import 'layout/footer';
 
 //pages
 @import 'pages/home';

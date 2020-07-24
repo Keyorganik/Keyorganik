@@ -5,14 +5,30 @@ body {
 .heading-primary {
 	font-size: 5rem;
 	color: $color-white;
+	&-black {
+		font-size: 5rem;
+		color: $color-black;
+	}
 }
 
 .heading-secondary {
 	font-size: 2rem;
 	color: $color-white;
+	&-black {
+		color: $color-black;
+	}
 }
 
-.heading-secondary-black {
-	font-size: 2rem;
-	color: #000;
+.heading-tertiary {
+	font-size: 1.5rem;
+	color: $color-white;
+	&-black {
+		color: $color-black;
+	}
+}
+
+.paragraph {
+	color: $color-black;
+	font-size: 1.5rem;
+	// text-align: justify;
 }
