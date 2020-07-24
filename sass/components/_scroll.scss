@@ -1,0 +1,27 @@
+.scroll-down {
+	position: absolute;
+	width: 3.5rem;
+	height: 7rem;
+	bottom: 2rem;
+	left: 50%;
+	border: 1px solid $color-secondary;
+	border-radius: 3.5rem;
+	opacity: 0.8;
+
+	cursor: pointer;
+
+	&::after {
+		content: '';
+		position: absolute;
+		top: 1.2rem;
+		left: 50%;
+		width: 8px;
+		height: 8px;
+		background: $color-primary;
+		margin-left: -4px;
+		border-radius: 4px;
+		animation-duration: 1.5s;
+		animation-iteration-count: infinite;
+		animation-name: scroll;
+	}
+}

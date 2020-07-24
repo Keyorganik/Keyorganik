@@ -1,0 +1,60 @@
+.btn {
+	&:link,
+	&:visited {
+		padding: 1rem 2rem;
+		font-size: 2.5rem;
+		position: relative;
+	}
+
+	&--yellow {
+		border: 2px solid $color-primary;
+		color: $color-white;
+		transition: all 0.4s;
+
+		&::before {
+			content: '';
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 0%;
+			height: 100%;
+			background-color: $color-primary;
+			z-index: -1;
+			transition: all 0.4s;
+		}
+
+		&:hover::before {
+			width: 100%;
+		}
+
+		&:hover {
+			color: #000;
+		}
+	}
+
+	&--green {
+		border: 2px solid $color-secondary;
+		color: $color-white;
+		transition: all 0.4s;
+
+		&::before {
+			content: '';
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 0%;
+			height: 100%;
+			background-color: $color-secondary;
+			z-index: -1;
+			transition: all 0.4s;
+		}
+
+		&:hover::before {
+			width: 100%;
+		}
+
+		&:hover {
+			color: #000;
+		}
+	}
+}

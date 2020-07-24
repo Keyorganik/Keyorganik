@@ -1,0 +1,42 @@
+.header {
+	&__list {
+		color: $color-white;
+		display: flex;
+		justify-content: space-between;
+
+		&--items {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+		}
+
+		&--item {
+			padding: 0 2rem;
+			font-size: 1.5rem;
+			cursor: pointer;
+			position: relative;
+			display: inline-block;
+
+			&::after {
+				content: '';
+				width: 0%;
+				position: absolute;
+				height: 0.3rem;
+				background-color: $color-secondary;
+				bottom: -0.4rem;
+				left: 2rem;
+				transition: all 0.5s;
+			}
+
+			&:hover::after {
+				width: calc(100% - 4rem);
+			}
+		}
+	}
+
+	&__logo > img {
+		//Logoyu bu şekilde boyutlandırdım
+		width: 12rem;
+		height: 12rem;
+	}
+}
