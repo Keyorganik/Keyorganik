@@ -6,6 +6,14 @@
 	text-align: center;
 }
 
+.left-to-right {
+	animation: leftToRight 1s;
+}
+
+.right-to-left {
+	animation: rightToLeft 1s;
+}
+
 // Margin
 .u-margin-bottom-xsmall {
 	margin-bottom: 1.5rem;

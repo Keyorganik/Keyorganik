@@ -1,0 +1,40 @@
+.contact {
+  .row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__icon {
+    font-size: 5rem;
+    padding-bottom: 0.7rem;
+    color: darken($color-secondary, 0.6);
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    & > div {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    h3 {
+      padding-bottom: 0.5rem;
+    }
+
+    span {
+      font-size: 1.4rem;
+    }
+
+  }
+
+  &__phone {
+    &--content {
+      
+    }
+  }
+}

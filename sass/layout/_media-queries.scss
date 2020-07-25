@@ -1,0 +1,68 @@
+@media (max-width: 992px){
+	.heading-primary{
+		font-size: 4rem;
+		&-black{
+			font-size: 4rem;
+		}
+	}
+	.heading-secondary
+	{
+		font-size: 1.5rem;
+		&-black{
+			font-size: 1.5rem;
+		}
+	}
+	
+	.paragraph {
+		font-size: 1.3rem;
+  }
+  
+  .card__body--paragraph{
+    font-size:1.3rem;
+    line-height: 1.4;
+  }
+
+  .header{    
+    &__list{
+      &--item{
+        padding: 0 1rem;
+        font-size: 1.3rem;
+      }
+    }    
+  }
+}
+
+
+@media (max-width: 768px){
+
+  .header{
+    &__hamburger{
+      display:block;
+    }
+    &__list{
+      &--items{
+        display:none;
+     
+        &.show{
+          display:flex;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width:  576px) {
+  .paragraph {
+    padding: 2rem 4rem;
+  }
+
+  .card__body--paragraph {
+    padding: 3rem 2rem;
+  }
+
+  .section-contact {
+    .contact__info {
+      padding: 0 4rem 2rem 4rem;
+    }
+  }
+}

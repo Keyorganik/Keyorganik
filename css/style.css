@@ -4,10 +4,15 @@
   box-sizing: border-box; }
 
 html {
-  font-size: 62.5%; }
+  font-size: 62.5%;
+  scroll-behavior: smooth; }
 
 a {
-  text-decoration: none; }
+  text-decoration: none;
+  color: #fff; }
+  a:active, a :visited {
+    text-decoration: none;
+    color: #fff; }
 
 ul {
   list-style: none; }
@@ -48,11 +53,33 @@ body {
     opacity: 0;
     transform: translateY(4rem); } }
 
+@keyframes leftToRight {
+  0% {
+    transform: translateX(-40rem);
+    opacity: 0; }
+  100% {
+    transform: translateX(0);
+    opacity: 1; } }
+
+@keyframes rightToLeft {
+  0% {
+    transform: translateX(40rem);
+    opacity: 0; }
+  100% {
+    transform: translateX(0);
+    opacity: 1; } }
+
 .container {
   padding: 0 10rem; }
 
 .text-center {
   text-align: center; }
+
+.left-to-right {
+  animation: leftToRight 1s; }
+
+.right-to-left {
+  animation: rightToLeft 1s; }
 
 .u-margin-bottom-xsmall {
   margin-bottom: 1.5rem; }
@@ -188,7 +215,7 @@ body {
 
 .card__body--paragraph {
   font-size: 1.4rem;
-  line-height: 1.7;
+  line-height: 1.5;
   text-align: center;
   padding: 0 .5rem; }
 
@@ -228,9 +255,38 @@ body {
 .swiper-pagination-bullet-active {
   background: #96bb7c !important; }
 
+.header__hamburger {
+  background: transparent;
+  border: 0;
+  color: #fff;
+  font-size: 1rem;
+  display: none;
+  cursor: pointer; }
+  .header__hamburger:focus {
+    outline: none; }
+
+.header__mobile__nav {
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translateX(50rem);
+  display: none;
+  background-color: #000;
+  height: 100vh; }
+  .header__mobile__nav.show {
+    transform: translateX(0);
+    display: block; }
+
 .header__nav {
-  position: relative;
-  z-index: 2; }
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  z-index: 2;
+  transition: all 0.4s; }
+  .header__nav-scroll {
+    background-color: black; }
 
 .header__list {
   color: #fff;
@@ -240,12 +296,16 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center; }
+    .header__list--items-mobile {
+      padding: 4rem 2rem; }
   .header__list--item {
     padding: 0 2rem;
     font-size: 1.5rem;
     cursor: pointer;
     position: relative;
     display: inline-block; }
+    .header__list--item a:link, .header__list--item a:visited {
+      color: inherit; }
     .header__list--item::after {
       content: '';
       width: 0%;
@@ -257,10 +317,14 @@ body {
       transition: all 0.5s; }
     .header__list--item:hover::after {
       width: calc(100% - 4rem); }
+    .header__list--item-mobile {
+      padding: 2rem 0;
+      color: #fff; }
 
-.header__logo > img {
+.header__logo-image {
   width: 12rem;
-  height: 12rem; }
+  height: 12rem;
+  transition: all 0.4s; }
 
 .header {
   position: relative; }
@@ -3167,6 +3231,63 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-evenly; }
+
+.contact .row {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.contact__icon {
+  font-size: 5rem;
+  padding-bottom: 0.7rem;
+  color: #94ba7a; }
+
+.contact__info {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .contact__info > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+  .contact__info h3 {
+    padding-bottom: 0.5rem; }
+  .contact__info span {
+    font-size: 1.4rem; }
+
+@media (max-width: 992px) {
+  .heading-primary {
+    font-size: 4rem; }
+    .heading-primary-black {
+      font-size: 4rem; }
+  .heading-secondary {
+    font-size: 1.5rem; }
+    .heading-secondary-black {
+      font-size: 1.5rem; }
+  .paragraph {
+    font-size: 1.3rem; }
+  .card__body--paragraph {
+    font-size: 1.3rem;
+    line-height: 1.4; }
+  .header__list--item {
+    padding: 0 1rem;
+    font-size: 1.3rem; } }
+
+@media (max-width: 768px) {
+  .header__hamburger {
+    display: block; }
+  .header__list--items {
+    display: none; }
+    .header__list--items.show {
+      display: flex; } }
+
+@media (max-width: 576px) {
+  .paragraph {
+    padding: 2rem 4rem; }
+  .card__body--paragraph {
+    padding: 3rem 2rem; }
+  .section-contact .contact__info {
+    padding: 0 4rem 2rem 4rem; } }
 
 .section-about-us {
   text-align: justify;

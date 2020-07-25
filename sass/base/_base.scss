@@ -6,10 +6,16 @@
 
 html {
 	font-size: 62.5%;
+	scroll-behavior: smooth;
 }
 
 a {
 	text-decoration: none;
+	color:$color-white;
+	&:active,:visited{
+		text-decoration: none;
+		color:$color-white;
+	}
 }
 
 ul {
