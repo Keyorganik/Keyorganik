@@ -1,68 +1,113 @@
-@media (max-width: 992px){
-	.heading-primary{
+@media (max-width: 1000px) {
+	.heading-primary {
 		font-size: 4rem;
-		&-black{
+		&-black {
 			font-size: 4rem;
 		}
 	}
-	.heading-secondary
-	{
+	.heading-secondary {
 		font-size: 1.5rem;
-		&-black{
+		&-black {
 			font-size: 1.5rem;
 		}
 	}
-	
+
 	.paragraph {
 		font-size: 1.3rem;
-  }
-  
-  .card__body--paragraph{
-    font-size:1.3rem;
-    line-height: 1.4;
-  }
+	}
 
-  .header{    
-    &__list{
-      &--item{
-        padding: 0 1rem;
-        font-size: 1.3rem;
-      }
-    }    
-  }
+	.card__body--paragraph {
+		font-size: 1.3rem;
+		line-height: 1.4;
+	}
+
+	.header {
+		&__nav {
+			padding: 0 3rem;
+		}
+		&__list {
+			&--item {
+				padding: 0 1rem;
+				font-size: 1.3rem;
+			}
+		}
+		&__mobile__nav {
+			display: none;
+		}
+	}
 }
 
+@media (max-width: 768px) {
+	.heading-primary {
+		font-size: 3rem;
+		&-black {
+			font-size: 3rem;
+		}
+	}
+	.heading-secondary {
+		font-size: 1.5rem;
+		&-black {
+			font-size: 1.5rem;
+		}
+	}
 
-@media (max-width: 768px){
+	.paragraph {
+		font-size: 1.3rem;
+	}
 
-  .header{
-    &__hamburger{
-      display:block;
-    }
-    &__list{
-      &--items{
-        display:none;
-     
-        &.show{
-          display:flex;
-        }
-      }
-    }
-  }
+	.card__body--paragraph {
+		font-size: 1.5rem;
+		line-height: 1.4;
+		margin-bottom: 4rem;
+	}
+
+	.header {
+		&__hamburger {
+			display: block;
+		}
+		&__list {
+			&--items {
+				display: none;
+
+				&.show {
+					display: flex;
+				}
+			}
+		}
+	}
 }
 
-@media (max-width:  576px) {
-  .paragraph {
-    padding: 2rem 4rem;
-  }
+@media (max-width: 576px) {
+	.header {
+		&__hero {
+			&__content {
+				padding: 0 2rem;
+			}
+			&--header {
+				font-size: 2rem;
+			}
+			&--paragraph {
+				font-size: 1.2rem;
+				line-height: 1.5;
+			}
+			&--btn:link,
+			&--btn:visited {
+				font-size: 1.4rem;
+			}
+		}
+	}
 
-  .card__body--paragraph {
-    padding: 3rem 2rem;
-  }
+	.paragraph {
+		padding: 2rem 4rem;
+	}
 
-  .section-contact {
-    .contact__info {
-      padding: 0 4rem 2rem 4rem;
-    }
-  }
+	.card__body--paragraph {
+		padding: 1.5rem 2rem;
+	}
+
+	.section-contact {
+		.contact__info {
+			padding: 0 4rem 2rem 4rem;
+		}
+	}
 }

@@ -29,7 +29,6 @@ window.addEventListener('scroll', () => {
 
 		ourMission.classList.add('left-to-right');
 		ourVision.classList.add('right-to-left');
-
 	} else {
 		nav.classList.remove('header__nav-scroll');
 		logo.style.width = '12rem';
@@ -39,10 +38,11 @@ window.addEventListener('scroll', () => {
 
 scrollDown.addEventListener('click', () => {
 	aboutUs.scrollIntoView();
-})
+});
 
 hamburger.addEventListener('click', () => {
 	navUl.classList.toggle('show');
-})
-
-
+	navUl.classList.contains('show')
+		? (hamburger.style = 'transform:translateX(-13rem)')
+		: (hamburger.style = 'transform:translateX(0)');
+});
