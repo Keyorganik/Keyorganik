@@ -1,0 +1,27 @@
+.companies {
+  display: flex;
+  justify-content: center;
+
+  &__logo {
+    width: 15rem;
+    
+    img {
+      width: 100%;
+      transition: all 0.3s;
+
+
+      &:hover {
+        transform: scale(1.1);
+        backface-visibility: hidden;
+      }
+    }
+ 
+    
+  }
+
+  .row {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly; 
+  }
+}
