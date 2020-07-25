@@ -4,8 +4,8 @@
 		position: absolute;
 		background: linear-gradient(
 				to bottom right,
-				rgba(#111111, 0.7),
-				rgba(#000, 0.7)
+				rgba(#111111, 0.5),
+				rgba(#000, 0.5)
 			),
 			url('../../img/hero.jpg');
 
@@ -24,9 +24,6 @@
 		&__content {
 			display: inline-block;
 			text-align: center;
-		}
-
-		&__header {
 		}
 	}
 }

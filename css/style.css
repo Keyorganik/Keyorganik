@@ -187,8 +187,44 @@ body {
   color: #96bb7c; }
 
 .card__body--paragraph {
-  font-size: 1.5rem;
-  line-height: 1.8; }
+  font-size: 1.4rem;
+  line-height: 1.8;
+  text-align: center; }
+
+.swiper-container {
+  width: 60%;
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10px; }
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  width: 50rem;
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center; }
+  .swiper-slide img {
+    width: 100%;
+    object-fit: contain; }
+
+.swiper-button-next, .swiper-button-prev {
+  color: #96bb7c !important; }
+
+.swiper-pagination-bullet-active {
+  background: #96bb7c !important; }
 
 .header__nav {
   position: relative;
@@ -228,7 +264,7 @@ body {
   position: relative; }
   .header__hero {
     position: absolute;
-    background: linear-gradient(to bottom right, rgba(17, 17, 17, 0.7), rgba(0, 0, 0, 0.7)), url("../../img/hero.jpg");
+    background: linear-gradient(to bottom right, rgba(17, 17, 17, 0.5), rgba(0, 0, 0, 0.5)), url("../../img/hero.jpg");
     background-size: cover;
     background-position: center;
     background-blend-mode: darken;
@@ -3120,4 +3156,10 @@ body {
   padding: 10rem 0; }
 
 .section-differences {
-  background-color: #f5f1da; }
+  background-color: #faf9f0; }
+
+.section-production-areas {
+  padding: 10rem 0; }
+
+.section-references {
+  background-color: #faf9f0; }

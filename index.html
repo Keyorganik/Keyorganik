@@ -12,6 +12,11 @@
 			rel="stylesheet"
 			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
 		/>
+		<link
+			rel="stylesheet"
+			href="https://unpkg.com/swiper/swiper-bundle.min.css"
+		/>
+		<script src="./index.js" defer></script>
 		<title>Key Organik | Yurmutanın Sağlık Anahtarı</title>
 	</head>
 	<body>
@@ -47,6 +52,8 @@
 					</h2>
 					<a href="#" class="btn btn--green">Deneme</a>
 				</div>
+
+				<!-- Scroll down botunu -->
 				<div class="scroll-down"></div>
 			</div>
 		</header>
@@ -132,13 +139,22 @@
 									<p
 										class="card__body--paragraph card__body--paragraph u-padding-horizantal-xsmall"
 									>
-										Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-										Veritatis magni reiciendis, molestias tenetur expedita esse
-										quis laboriosam porro velit! Tenetur! Lorem ipsum dolor sit
-										amet consectetur adipisicing elit. Culpa numquam eius et
-										maiores iusto tempore delectus dolore? Hic, esse eius? Lorem
-										ipsum dolor, sit amet consectetur adipisicing elit.
-										Corporis, magnam.
+										Kümeslerimizin içerisinde havalandırmadan folluk sistemine
+										kadar otomasyon kullanılmıştır. Fan sistemimiz hava
+										sıcaklığına göre devreye girmektedir. Pencere
+										sistemlerininde bu uyuma adapte edilmesiyle otomasyonda
+										%100'e yakın otomasyonu sağladık. Tüm kümeslerimizde bulunan
+										otomatik folluk sayesinde tavukların rahatlığı sağlanmış
+										olup kırık kirli yumurta ayrımını yapmak son derece
+										kolaylaşmıştır. Yemleme ve sulama sistemleri otomasyonumuzun
+										en kritik bölümü oynamaktadır. Her kümes başındaki
+										silolarımız yem aktarımını en basit hale getirmiştir. Suyun
+										canlı hayatındaki öneminin bilincinde olan firmamız
+										tavuklarımızın bir an bile susuz kalma ihtimalini göz önüne
+										alarak ana su deposunun yanında her kümes için ayrı su
+										tankları bulunmaktadır. Yapılmış olan bütün sistemler tek
+										bir merkez üzerinden kontrolleri sağlanarak güven içerisinde
+										yaşam alanı oluşturmaktadır.
 									</p>
 								</div>
 							</div>
@@ -215,7 +231,46 @@
 					</div>
 				</div>
 			</section>
+			<section class="section-production-areas u-padding-vertical-big">
+				<h2
+					class="heading-secondary heading-secondary-black text-center u-margin-bottom-big"
+				>
+					Üretim Alanları
+				</h2>
+				<div class="swiper-container">
+					<div class="swiper-wrapper">
+						<!-- <div class="swiper-slide">
+							<img src="./img/insaat-1.jpg" alt="insaat" />
+						</div> -->
+						<div class="swiper-slide">
+							<img src="./img/kumes-ic.jpg" alt="insaat" />
+						</div>
+						<div class="swiper-slide">
+							<img src="./img/kumesler-ust.jpg" alt="insaat" />
+						</div>
+						<div class="swiper-slide">
+							<img src="./img/kumes-ust-2.jpg" alt="insaat" />
+						</div>
+						<div class="swiper-slide">
+							<img src="./img/kumes-ust-3.jpg" alt="insaat" />
+						</div>
+					</div>
+					<!-- Add Pagination -->
+					<div class="swiper-pagination"></div>
+					<!-- Add Arrows -->
+					<div class="swiper-button-next"></div>
+					<div class="swiper-button-prev"></div>
+				</div>
+			</section>
+			<section class="section-references u-padding-vertical-big">
+				<h2
+					class="heading-secondary heading-secondary-black text-center u-margin-bottom-medium"
+				>
+					Referanslarımız
+				</h2>
+			</section>
 		</main>
+
 		<footer class="footer">
 			<div class="row container">
 				<div class="col-sm-12 col-md-4 footer__image">
@@ -234,5 +289,7 @@
 				</div>
 			</div>
 		</footer>
+
+		<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 	</body>
 </html>
