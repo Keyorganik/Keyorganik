@@ -31,15 +31,19 @@
 				font-size: 1.4rem;
 			}
 		}
-		&__mobile__nav {
-			display: none;
-		}
+	
 	}
 }
 
 @media (max-width: 768px) {
 	.mobile-navigation {
 		display:block;
+		&__background{
+			transition: all 0.2s ;
+		}
+		&__nav{
+			transition: all 0.2s ;
+		}
 	}
 	.heading-primary {
 		font-size: 3.5rem;

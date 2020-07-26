@@ -3424,13 +3424,15 @@ body {
     padding: 0 3rem; }
   .header__list--item {
     padding: 0 1rem;
-    font-size: 1.4rem; }
-  .header__mobile__nav {
-    display: none; } }
+    font-size: 1.4rem; } }
 
 @media (max-width: 768px) {
   .mobile-navigation {
     display: block; }
+    .mobile-navigation__background {
+      transition: all 0.2s; }
+    .mobile-navigation__nav {
+      transition: all 0.2s; }
   .heading-primary {
     font-size: 3.5rem; }
     .heading-primary-black {
