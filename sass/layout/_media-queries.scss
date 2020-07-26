@@ -37,12 +37,19 @@
 
 @media (max-width: 768px) {
 	.mobile-navigation {
+		
 		display:block;
 		&__background{
-			transition: all 0.2s ;
+			transition: transform 0.2s ;
+			height: 3rem;
+      width: 3rem;
 		}
 		&__nav{
-			transition: all 0.2s ;
+			transition: none ;
+		}
+		&__button{
+			height: 3rem;
+      width: 3rem;
 		}
 	}
 	.heading-primary {

@@ -27,8 +27,8 @@
       align-items: center;
       cursor: pointer;
       background-color: $color-white;
-      height: 6rem;
-      width: 6rem;
+      height: 5rem;
+      width: 5rem;
       position: fixed;
       top: 3.5rem;
       right: 6rem;
@@ -37,8 +37,8 @@
       box-shadow: 0 1rem 3rem rgba($color: $color-black, $alpha: 0.1);
     }
     &__background {
-      height: 6rem;
-      width: 6rem;
+      height: 5rem;
+      width: 5rem;
       border-radius: 50%;
       position: fixed;
       top: 3.5rem;
