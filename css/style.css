@@ -141,6 +141,9 @@ body {
 .u-padding-vertical-big {
   padding: 8rem 0; }
 
+.u-display-inline-block {
+  display: inline-block; }
+
 .btn:link, .btn:visited {
   padding: 1rem 2rem;
   font-size: 2.5rem;
@@ -3192,32 +3195,42 @@ body {
 /*# sourceMappingURL=bootstrap-grid.css.map */
 .footer {
   width: 100%;
-  background-color: #000;
-  display: flex;
-  justify-content: center; }
-  .footer .row {
+  background-color: #000; }
+  .footer__container {
     display: flex;
-    align-items: center;
-    justify-content: space-around;
-    padding: 1rem 2rem; }
+    justify-content: space-between;
+    align-items: center; }
   .footer__image img {
     width: 7rem; }
   .footer__copyright--text {
     color: #fff;
     font-size: 1.3rem; }
   .footer__social {
-    color: #fff;
-    display: flex;
-    justify-content: flex-end; }
-    .footer__social a:link, .footer__social a:visited {
-      color: #fff; }
-    .footer__social--icon {
-      padding: 0 2rem;
-      font-size: 4rem;
-      transition: all 0.2s;
-      cursor: pointer; }
-      .footer__social--icon:hover {
-        color: #96bb7c; }
+    cursor: pointer; }
+    .footer__social > :first-child {
+      margin-right: 2rem; }
+    .footer__social--icon-facebook:hover {
+      color: #097fec; }
+    .footer__social--icon-instagram:hover {
+      background: linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);
+      background-clip: text;
+      -webkit-background-clip: text;
+      color: transparent; }
+
+.credit {
+  color: #f0eedb;
+  opacity: 1;
+  padding: 0.5rem;
+  font-size: 1.1rem; }
+  .credit > p > a {
+    color: #e3dfc8;
+    display: inline-block;
+    transition: all 0.5s; }
+    .credit > p > a:hover {
+      color: #fff;
+      box-shadow: 0 2rem 3rem rgba(0, 0, 0, 0.4);
+      transform: rotate(5deg) scale(1.3);
+      background-color: #96bb7c; }
 
 .companies {
   display: flex;
@@ -3264,9 +3277,9 @@ body {
     .heading-primary-black {
       font-size: 4rem; }
   .heading-secondary {
-    font-size: 1.5rem; }
+    font-size: 1.8rem; }
     .heading-secondary-black {
-      font-size: 1.5rem; }
+      font-size: 1.8rem; }
   .paragraph {
     font-size: 1.3rem; }
   .card__body--paragraph {
@@ -3286,9 +3299,9 @@ body {
     .heading-primary-black {
       font-size: 3rem; }
   .heading-secondary {
-    font-size: 1.5rem; }
+    font-size: 1.8rem; }
     .heading-secondary-black {
-      font-size: 1.5rem; }
+      font-size: 1.8rem; }
   .paragraph {
     font-size: 1.3rem; }
   .card__body--paragraph {
@@ -3317,7 +3330,9 @@ body {
   .card__body--paragraph {
     padding: 1.5rem 2rem; }
   .section-contact .contact__info {
-    padding: 0 4rem 2rem 4rem; } }
+    padding: 0 4rem 2rem 4rem; }
+  .footer__social > * > * {
+    font-size: 24px; } }
 
 .section-about-us {
   text-align: justify;
