@@ -7,10 +7,10 @@
     align-items: center;
     cursor: pointer;
     background-color: $color-white;
-    height: 6rem;
-    width: 6rem;
+    height: 5rem;
+    width: 5rem;
     position: fixed;
-    top: 4rem;
+    top: 5rem;
     right: 6rem;
     border-radius: 50%;
     z-index: 1000;
@@ -30,7 +30,7 @@
       height: 5rem;
       width: 5rem;
       position: fixed;
-      top: 3.5rem;
+      top: 5rem;
       right: 6rem;
       border-radius: 50%;
       z-index: 1000;
@@ -41,8 +41,8 @@
       width: 5rem;
       border-radius: 50%;
       position: fixed;
-      top: 3.5rem;
-      right: 6.5rem;
+      top: 5rem;
+      right: 6rem;
       background-image: radial-gradient(
         $color-secondary-light,
         $color-secondary-dark

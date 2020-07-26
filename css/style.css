@@ -313,10 +313,10 @@ body {
     align-items: center;
     cursor: pointer;
     background-color: #fff;
-    height: 6rem;
-    width: 6rem;
+    height: 5rem;
+    width: 5rem;
     position: fixed;
-    top: 4rem;
+    top: 5rem;
     right: 6rem;
     border-radius: 50%;
     z-index: 1000;
@@ -332,7 +332,7 @@ body {
     height: 5rem;
     width: 5rem;
     position: fixed;
-    top: 3.5rem;
+    top: 5rem;
     right: 6rem;
     border-radius: 50%;
     z-index: 1000;
@@ -342,8 +342,8 @@ body {
     width: 5rem;
     border-radius: 50%;
     position: fixed;
-    top: 3.5rem;
-    right: 6.5rem;
+    top: 5rem;
+    right: 6rem;
     background-image: radial-gradient(#b0cb9c, #6e994f);
     z-index: 300;
     transition: transform 0.8s cubic-bezier(0.83, 0, 0.17, 1); }

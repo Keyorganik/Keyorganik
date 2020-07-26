@@ -33,24 +33,18 @@ window.addEventListener('scroll', () => {
 		nav.classList.add('header__nav-scroll');
 		logo.style.width = '8rem';
 		logo.style.height = '8rem';
-		mobileNavButton.style = "top: 2rem"
-		mobileNavButton.style.width = '5rem';
-		mobileNavButton.style.height = '5rem';
-		mobileNavBackground.style = "top: 2rem"
-		mobileNavBackground.style.width = '4.5rem';
-		mobileNavBackground.style.height = '5rem';
+		mobileNavButton.style = "top: 2.5rem"		
+		mobileNavBackground.style = "top: 2.5rem"	
 
 		ourMission.classList.add('left-to-right');
 		ourVision.classList.add('right-to-left');
-	} else {
+	} 
+	else {
 		nav.classList.remove('header__nav-scroll');
 		logo.style.width = '12rem';
 		logo.style.height = '12rem';
-		mobileNavButton.style.width = '7rem'
-		mobileNavButton.style.height = '7rem'
-		mobileNavBackground.style.width = '6rem';
-		mobileNavBackground.style.height = '6rem';
-		
+		mobileNavButton.style = "top: 4.5rem"
+		mobileNavBackground.style = "top: 4.5rem"		
 	}
 
 	let top  = window.pageYOffset + window.innerHeight,
