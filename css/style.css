@@ -249,20 +249,6 @@ body {
   color: #96bb7c;
   animation-fill-mode: backwards; }
 
-.card__header--icon {
-  /*&-1 {
-				animation: fadeIn 1s;
-			}
-			&-2 {
-				animation: fadeIn 1s 0.5s;
-			}
-			&-3 {
-				animation: fadeIn 1s 1s;
-			}
-			&-4 {
-				animation: fadeIn 1s 1.5s;
-			}*/ }
-
 .card__body--paragraph {
   font-size: 1.4rem;
   line-height: 1.5;

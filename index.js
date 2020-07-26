@@ -80,3 +80,16 @@ mobileNavButton.addEventListener('click', () =>{
 })
 
 
+
+
+const gulp = require('gulp');
+const imagemin = require('gulp-imagemin');
+ 
+
+	
+gulp.task('imageCompress',	() => {
+	gulp.src('./img/*')
+	.pipe(imagemin())
+	.pipe(gulp.dest('dist/images'))
+})
+
