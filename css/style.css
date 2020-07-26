@@ -3431,13 +3431,13 @@ body {
     display: block; }
     .mobile-navigation__background {
       transition: transform 0.2s;
-      height: 3rem;
-      width: 3rem; }
+      height: 4rem;
+      width: 4rem; }
     .mobile-navigation__nav {
       transition: none; }
     .mobile-navigation__button {
-      height: 3rem;
-      width: 3rem; }
+      height: 4.2rem;
+      width: 4.2rem; }
   .heading-primary {
     font-size: 3.5rem; }
     .heading-primary-black {

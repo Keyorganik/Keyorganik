@@ -18,6 +18,7 @@ const scrollDown = document.querySelector('.scroll-down');
 const aboutUs = document.querySelector('#about-us');
 const ourMission = document.querySelector('.heading-our-mission');
 const ourVision = document.querySelector('.heading-our-vision');
+const mobileNav = document.querySelector('.mobile-navigation__nav');
 const mobileNavItems = document.querySelectorAll('.mobile-navigation__item');
 const mobileNavCheckbox = document.querySelector('.mobile-navigation__checkbox');
 const mobileNavButton = document.querySelector('.mobile-navigation__button');
@@ -74,5 +75,14 @@ mobileNavItemsArr.map((item) => item.addEventListener('click', () =>{
 	mobileNavCheckbox.checked = false;
 }
 ))
+
+mobileNavButton.addEventListener('click', () =>{
+	if(mobileNavCheckbox.checked === true){
+		// mobileNavBackground.style = 'transition: "none"';
+		console.log("clicked");
+		mobileNavBackground.style.transition = 'none';
+		mobileNav.style.transition = 'none'; 
+	}
+})
 
 
