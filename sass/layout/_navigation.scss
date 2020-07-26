@@ -1,73 +1,40 @@
 .header {
-	transition: all 0.3s;
-	&__hamburger {
-		background: transparent;
-		border: 0;
-		color: $color-white;
-		font-size: 1rem;
-		display: none;
-		transition: all 0.5s;
-		cursor: pointer;
 
-		&:focus {
-			outline: none;
-		}
-	}
 
-	&__mobile__nav {
-		// display:none;
-		position: fixed;
+	&__nav {	
+		
+		position:fixed;
 		top: 0;
-		right: 0;
-
-		transform: translateX(50rem);
-		display: block;
-		background-color: $color-black;
-		z-index: 3;
-		height: 100vh;
-
-		&.show {
-			transform: translateX(0);
-			display: block;
-		}
-	}
-
-	&__nav {
-		position: fixed;
-		top: 0;
-		left: 0;
+		left: 50%; 
+		transform: translateX(-50%);
 		width: 100%;
 		z-index: 2;
 		transition: all 0.4s;
-		overflow: hidden;
 
-		&-scroll {
-			background-color: rgba($color: $color-black, $alpha: 1);
+		&-scroll{			
+			background-color:rgba($color: $color-black, $alpha: 1);
 		}
+	
 	}
 	&__list {
 		color: $color-white;
 		display: flex;
 		justify-content: space-between;
-		transition: all 0.3s;
 
 		&--items {
-			display: flex;
+			display: flex; 
 			justify-content: space-between;
-			align-items: center;
-
-			&-mobile {
-				padding: 4rem 2rem;
-				height: 100vh;
-			}
+			align-items: center;	
 		}
 
 		&--item {
+
 			padding: 0 2rem;
 			font-size: 1.5rem;
 			cursor: pointer;
 			position: relative;
 			display: inline-block;
+		
 
 			a {
 				&:link,
@@ -90,12 +57,6 @@
 			&:hover::after {
 				width: calc(100% - 4rem);
 			}
-
-			&-mobile {
-				padding: 2rem 0;
-				color: $color-white;
-				font-size: 1.5rem;
-			}
 		}
 	}
 
@@ -103,6 +64,6 @@
 		//Logoyu bu şekilde boyutlandırdım
 		width: 12rem;
 		height: 12rem;
-		transition: all 0.4s;
+		transition: all 0.4s
 	}
 }

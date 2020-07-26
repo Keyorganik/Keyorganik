@@ -25,15 +25,12 @@
 				<div class="header__list">
 					<div class="header__logo">
 						<img
+
 							class="header__logo-image"
 							src="./img/logo.svg"
 							alt="KeyOrganik"
 						/>
 					</div>
-
-					<button class="header__hamburger">
-						<i class="fas fa-bars"></i>
-					</button>
 
 					<ul class="header__list--items">
 						<li class="header__list--item"><a href="#header">Anasayfa</a></li>
@@ -53,29 +50,36 @@
 					</ul>
 				</div>
 			</nav>
-			<div class="header__mobile__nav">
-				<ul class="header__list--items-mobile">
-					<li class="header__list--item-mobile">
-						<a href="#header">Anasayfa</a>
-					</li>
-					<li class="header__list--item-mobile">
-						<a href="#about-us">Hakkımızda</a>
-					</li>
-					<li class="header__list--item-mobile">
-						<a href="#differences">Neden Biz?</a>
-					</li>
-					<li class="header__list--item-mobile">
-						<a href="#production-areas">Üretim Alanları</a>
-					</li>
-					<li class="header__list--item-mobile">
-						<a href="#references">Referanslar</a>
-					</li>
-					<li class="header__list--item-mobile">
-						<a href="#contact">İletişim</a>
-					</li>
-				</ul>
+			<div class="mobile-navigation">
+				<input type="checkbox" class="mobile-navigation__checkbox" id="navi-toogle" />
+				<label for="navi-toogle" class="mobile-navigation__button"
+					><span class="mobile-navigation__icon">&nbsp;</span></label
+				>
+	
+				<div class="mobile-navigation__background">&nbsp;</div>
+				<nav class="mobile-navigation__nav">
+					<ul class="mobile-navigation__list">
+						<li class="mobile-navigation__item">
+							<a href="#header" class="mobile-navigation__link"><span>01</span>Anasayfa</a>
+						</li>
+						<li class="mobile-navigation__item">
+							<a href="#about-us" class="mobile-navigation__link"><span>02</span>Hakkımızda</a>
+						</li>
+						<li class="mobile-navigation__item">
+							<a href="#differences" class="mobile-navigation__link"><span>03</span>Neden Biz?</a>
+						</li>
+						<li class="mobile-navigation__item">
+							<a href="#production-areas" class="mobile-navigation__link"><span>04</span>Üretim Alanları</a>
+						</li>
+						<li class="mobile-navigation__item">
+							<a href="#references" class="mobile-navigation__link"><span>05</span>Referanslar</a>
+						</li>
+						<li class="mobile-navigation__item">
+							<a href="#contact" class="mobile-navigation__link"><span>06</span>İletişim</a>
+						</li>
+					</ul>
+				</nav>
 			</div>
-
 			<div class="header__hero">
 				<div class="header__hero__content">
 					<h1
@@ -169,7 +173,7 @@
 						<div class="col-sm-12 col-md-6 col-lg-3">
 							<div class="card text-center">
 								<div class="card__header u-margin-bottom-xsmall">
-									<i class="fas fa-cogs"></i>
+									<i class="fas fa-cogs card__header--icon-1"></i>
 								</div>
 								<div class="card__body">
 									<h3
@@ -200,7 +204,7 @@
 						<div class="col-sm-12 col-md-6 col-lg-3">
 							<div class="card text-center">
 								<div class="card__header u-margin-bottom-xsmall">
-									<i class="fas fa-seedling"></i>
+									<i class="fas fa-seedling card__header--icon-2"></i>
 								</div>
 								<div class="card__body">
 									<h3
@@ -231,7 +235,7 @@
 						<div class="col-sm-12 col-md-6 col-lg-3">
 							<div class="card text-center">
 								<div class="card__header u-margin-bottom-xsmall">
-									<i class="fas fa-egg"></i>
+									<i class="fas fa-egg card__header--icon-3"></i>
 								</div>
 								<div class="card__body">
 									<h3
@@ -261,7 +265,7 @@
 						<div class="col-sm-12 col-md-6 col-lg-3">
 							<div class="card text-center">
 								<div class="card__header u-margin-bottom-xsmall">
-									<i class="fas fa-globe-europe"></i>
+									<i class="fas fa-globe-europe card__header--icon-4"></i>
 								</div>
 								<div class="card__body">
 									<h3

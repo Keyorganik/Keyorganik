@@ -25,5 +25,19 @@
 			display: inline-block;
 			text-align: center;
 		}
+
+		&--header {
+			animation: leftToRight 1s;
+		}
+
+		&--btn {
+			animation: bottomToTop 3s;
+		}
+
+		&--paragraph {
+			animation: rightToLeft 1s;
+		}
 	}
+
 }
+
