@@ -1,36 +1,5 @@
 .header {
 	transition: all 0.3s;
-	&__hamburger {
-		background: transparent;
-		border: 0;
-		color: $color-white;
-		font-size: 1rem;
-		display: none;
-		transition: all 0.5s;
-		cursor: pointer;
-
-		&:focus {
-			outline: none;
-		}
-	}
-
-	&__mobile__nav {
-		// display:none;
-		position: fixed;
-		top: 0;
-		right: 0;
-
-		transform: translateX(50rem);
-		display: block;
-		background-color: $color-black;
-		z-index: 3;
-		height: 100vh;
-
-		&.show {
-			transform: translateX(0);
-			display: block;
-		}
-	}
 
 	&__nav {
 		position: fixed;
@@ -55,11 +24,6 @@
 			display: flex;
 			justify-content: space-between;
 			align-items: center;
-
-			&-mobile {
-				padding: 4rem 2rem;
-				height: 100vh;
-			}
 		}
 
 		&--item {
@@ -89,12 +53,6 @@
 
 			&:hover::after {
 				width: calc(100% - 4rem);
-			}
-
-			&-mobile {
-				padding: 2rem 0;
-				color: $color-white;
-				font-size: 1.5rem;
 			}
 		}
 	}
