@@ -6,7 +6,7 @@
 	"scripts": {
 		"compile:sass": "node-sass sass/main.scss css/style.css -w",
 		"build": "webpack",
-    "start:dev": "webpack-dev-server"
+		"start:dev": "webpack-dev-server"
 	},
 	"repository": {
 		"type": "git",
@@ -28,8 +28,5 @@
 	"dependencies": {
 		"node-sass": "^4.14.1"
 	},
-	"devDependencies": {
-		"gulp": "^4.0.2",
-		"gulp-imagemin": "^7.1.0"
-	}
+	"devDependencies": {}
 }
