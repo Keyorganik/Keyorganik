@@ -1,14 +1,12 @@
 .header {
-	transition: all 0.3s;
-
 	&__nav {
 		position: fixed;
 		top: 0;
-		left: 0;
+		left: 50%;
+		transform: translateX(-50%);
 		width: 100%;
 		z-index: 2;
 		transition: all 0.4s;
-		overflow: hidden;
 
 		&-scroll {
 			background-color: rgba($color: $color-black, $alpha: 1);
@@ -18,7 +16,6 @@
 		color: $color-white;
 		display: flex;
 		justify-content: space-between;
-		transition: all 0.3s;
 
 		&--items {
 			display: flex;

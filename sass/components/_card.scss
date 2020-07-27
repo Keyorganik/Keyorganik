@@ -2,7 +2,23 @@
 	&__header {
 		& > i {
 			color: $color-secondary;
+			animation-fill-mode: backwards;
 		}
+
+		// &--icon {
+		// 	/*&-1 {
+		// 		animation: fadeIn 1s;
+		// 	}
+		// 	&-2 {
+		// 		animation: fadeIn 1s 0.5s;
+		// 	}
+		// 	&-3 {
+		// 		animation: fadeIn 1s 1s;
+		// 	}
+		// 	&-4 {
+		// 		animation: fadeIn 1s 1.5s;
+		// 	}*/
+		// }
 	}
 	&__body {
 		&--paragraph {

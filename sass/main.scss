@@ -15,7 +15,9 @@
 @import 'components/card';
 @import 'components/slider';
 
+
 //layouts
+@import 'layout/mobile_nav';
 @import 'layout/navigation';
 @import 'layout/hero';
 @import 'layout/header';
@@ -24,6 +26,8 @@
 @import 'layout/companies';
 @import 'layout/contact';
 @import 'layout/media-queries';
+
+
 
 //pages
 @import 'pages/home';

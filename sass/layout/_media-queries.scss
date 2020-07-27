@@ -6,18 +6,18 @@
 		}
 	}
 	.heading-secondary {
-		font-size: 1.8rem;
+		font-size: 2.2rem;
 		&-black {
-			font-size: 1.8rem;
+			font-size: 2.2rem;
 		}
 	}
 
 	.paragraph {
-		font-size: 1.3rem;
+		font-size: 1.5rem;
 	}
 
 	.card__body--paragraph {
-		font-size: 1.3rem;
+		font-size: 1.5rem;
 		line-height: 1.4;
 	}
 
@@ -28,26 +28,40 @@
 		&__list {
 			&--item {
 				padding: 0 1rem;
-				font-size: 1.3rem;
+				font-size: 1.4rem;
 			}
 		}
-		&__mobile__nav {
-			display: none;
-		}
+	
 	}
 }
 
 @media (max-width: 768px) {
+	.mobile-navigation {
+		
+		display:block;
+		&__background{
+			transition: transform 0.2s ;
+			height: 4rem;
+      width: 4rem;
+		}
+		&__nav{
+			transition: none ;
+		}
+		&__button{
+			height: 4.2rem;
+      width: 4.2rem;
+		}
+	}
 	.heading-primary {
-		font-size: 3rem;
+		font-size: 3.5rem;
 		&-black {
-			font-size: 3rem;
+			font-size: 3.5rem;
 		}
 	}
 	.heading-secondary {
-		font-size: 1.8rem;
+		font-size: 2rem;
 		&-black {
-			font-size: 1.8rem;
+			font-size: 2rem;
 		}
 	}
 
@@ -84,7 +98,7 @@
 				padding: 0 2rem;
 			}
 			&--header {
-				font-size: 2rem;
+				font-size: 3rem;
 			}
 			&--paragraph {
 				font-size: 1.2rem;
@@ -92,7 +106,7 @@
 			}
 			&--btn:link,
 			&--btn:visited {
-				font-size: 1.4rem;
+				font-size: 1.8rem;
 			}
 		}
 	}

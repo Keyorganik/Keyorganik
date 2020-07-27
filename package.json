@@ -4,7 +4,9 @@
 	"description": "Keyorganik, organik ve sağlıklı yumurta üretimi yapan ve bunu tüketiciyle buluşturan bir organik yumurta üreticisidir.",
 	"main": "index.js",
 	"scripts": {
-		"compile:sass": "node-sass sass/main.scss css/style.css -w"
+		"compile:sass": "node-sass sass/main.scss css/style.css -w",
+		"build": "webpack",
+    "start:dev": "webpack-dev-server"
 	},
 	"repository": {
 		"type": "git",
@@ -20,10 +22,14 @@
 	"author": "Orhan Özkercin",
 	"license": "ISC",
 	"bugs": {
-		"url": "https://github.com/OrhanOzkercin/keyorganik/issues"
+		"url": "https://github.com/Keyorganik/keyorganik/issues"
 	},
-	"homepage": "https://github.com/OrhanOzkercin/keyorganik#readme",
+	"homepage": "https://github.com/Keyorganik/keyorganik#readme",
 	"dependencies": {
 		"node-sass": "^4.14.1"
+	},
+	"devDependencies": {
+		"gulp": "^4.0.2",
+		"gulp-imagemin": "^7.1.0"
 	}
 }
