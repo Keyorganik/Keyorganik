@@ -10,3 +10,13 @@
 		object-fit: cover;
 	}
 }
+.swiper-button {
+	&-next,
+	&-prev {
+		color: $color-secondary !important;
+	}
+}
+
+.swiper-pagination-bullet-active {
+	background-color: $color-secondary !important;
+}

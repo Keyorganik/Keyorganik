@@ -5,6 +5,10 @@ var mySwiper = new Swiper('.swiper-container', {
 	fadeEffect: {
 		crossFade: true,
 	},
+	pagination: {
+		el: '.swiper-pagination',
+		type: 'bullets',
+	},
 	navigation: {
 		nextEl: '.swiper-button-next',
 		prevEl: '.swiper-button-prev',
