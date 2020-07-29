@@ -31,25 +31,23 @@
 				font-size: 1.4rem;
 			}
 		}
-	
 	}
 }
 
 @media (max-width: 768px) {
 	.mobile-navigation {
-		
-		display:block;
-		&__background{
-			transition: transform 0.2s ;
+		display: block;
+		&__background {
+			transition: transform 0.2s;
 			height: 4rem;
-      width: 4rem;
+			width: 4rem;
 		}
-		&__nav{
-			transition: none ;
+		&__nav {
+			transition: none;
 		}
-		&__button{
+		&__button {
 			height: 4.2rem;
-      width: 4.2rem;
+			width: 4.2rem;
 		}
 	}
 	.heading-primary {
@@ -87,6 +85,16 @@
 					display: flex;
 				}
 			}
+		}
+	}
+	.swiper-container {
+		width: 80%;
+		height: 40rem;
+	}
+	.swiper-slide {
+		& > img {
+			width: 100%;
+			height: 40rem;
 		}
 	}
 }
@@ -130,6 +138,16 @@
 			& > * > * {
 				font-size: 24px;
 			}
+		}
+	}
+	.swiper-container {
+		width: 80%;
+		height: 30rem;
+	}
+	.swiper-slide {
+		& > img {
+			width: 100%;
+			height: 30rem;
 		}
 	}
 }
