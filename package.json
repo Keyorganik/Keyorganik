@@ -1,7 +1,7 @@
 {
 	"name": "key-organik",
 	"version": "1.0.0",
-	"description": "Keyorganik, organik ve sağlıklı yumurta üretimi yapan ve bunu tüketiciyle buluşturan bir organik yumurta üreticisidir.",
+	"description": "Keyorganik, organik ve sağlıklı yumurta üretimi ve satışını yapan bir organik yumurta üreticisidir. Bir çok büyük firmaya sağlıklı bir şekilde satış yapan firmamızın aynı zamanda yurt dışı ayağı da vardır.",
 	"main": "index.js",
 	"scripts": {
 		"compile:sass": "node-sass sass/main.scss css/style.css -w",
