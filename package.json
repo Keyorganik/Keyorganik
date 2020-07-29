@@ -1,7 +1,7 @@
 {
 	"name": "key-organik",
 	"version": "1.0.0",
-	"description": "Keyorganik, organik ve sağlıklı yumurta üretimi ve satışını yapan bir organik yumurta üreticisidir. Bir çok büyük firmaya sağlıklı bir şekilde satış yapan firmamızın aynı zamanda yurt dışı ayağı da vardır.",
+	"description": "Keyorganik, organik ve sağlıklı yumurta üretimi ve satışını yapan bir organik yumurta üreticisidir.",
 	"main": "index.js",
 	"scripts": {
 		"compile:sass": "node-sass sass/main.scss css/style.css -w",
@@ -13,11 +13,9 @@
 		"url": "git+https://github.com/OrhanOzkercin/keyorganik.git"
 	},
 	"keywords": [
-		"organik",
-		"yumurta",
+		"organik yumurta",
 		"keyorganik",
-		"yumurta",
-		"satış"
+		"yumurta"
 	],
 	"author": "Orhan Özkercin",
 	"license": "ISC",
